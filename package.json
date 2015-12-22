@@ -1,0 +1,13 @@
+{
+  "name": "blogroll",
+  "version": "1.0.0",
+  "description": "Backbone Tutorial",
+  "main": "index.html",
+  "author": "Ariel Zusman",
+  "license": "ISC",
+  "dependencies": {
+    "backbone": "^1.2.3",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.1.4"
+  }
+}
