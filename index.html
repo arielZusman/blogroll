@@ -17,10 +17,26 @@
 					<th>URL</th>
 					<th>Action</th>
 				</tr>
+				<tr>
+				   	<td><input type="text" class="form-control author-input"></td>
+				   	<td><input type="text" class="form-control title-input"></td>
+				   	<td><input type="text" class="form-control url-input"></td>
+				   	<td><button class="btn btn-primary add-blog">Add</button></td>
+				   </tr>
 			</thead>
+			<tbody class="blogs-list"></tbody>
 		</table>
 	</div>
 
+	<script type="text/template" class="blogs-list-template">
+		<td><span class="author"><%= author %></span></td>
+		<td><span class="title"><%= title %></span></td>
+		<td><span class="url"><%= url %></span></td>
+		<td>
+			<button class="btn btn-warning edit-blog">Edit</button>
+			<button class="btn btn-danger delete-blog">Delete</button>
+		</td>
+	</script>
 	<script src="node_modules/jquery/dist/jquery.js"></script>
 	<script src="node_modules/backbone/node_modules/underscore/underscore.js"></script>
 	<script src="node_modules/backbone/backbone.js"></script>
